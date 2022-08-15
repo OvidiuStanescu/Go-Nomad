@@ -1,0 +1,36 @@
+<div class="info-display">
+    <div class="container">
+        <div class="houses-flex">
+            <h1><b>Available houses:</b></h1>
+
+            {{#each houses}}
+
+            <div class="mb-4 house">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <div style="height: 40%;">
+                            <a href="/housing/details/{{id}}">
+                                <h3>{{name}}</h3>
+                            </a>
+                            <p style="font-size: 14px; color:black">{{description}}</p>
+                        </div>
+                        <div style="height: 60%;">
+                            <img src="{{picture}}" alt="pic">
+                            <a href="/housing/edit/{{id}}" class="btn search-bar-btn">Edit</a>
+                            <form action="/housing/delete/{{id}}" method="POST">
+                                <button style="text-transform:uppercase; letter-spacing: 2px" class="btn btn-danger"
+                                    type="submit">Delete</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+</div>

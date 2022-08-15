@@ -1,0 +1,16 @@
+<div class="info-display">
+    <div class="container houses-flex">
+        <h1 class="hero-title">My <br> properties:</h1>
+
+        {{#each house}}
+        <div class="mb-4 house">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p style="color: black; font-weight:bold">{{name}}</p>
+                    <img src="{{picture}}" alt="">
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

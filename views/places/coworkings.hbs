@@ -1,0 +1,24 @@
+<div class="schedule-display">
+    <div class="container">
+        <h1 style="padding-top: 30px; font-weight: bold">Coworking Details</h1>
+        <hr>
+        <img src="{{photo}}" alt="Photo" style="width: 300px; border-radius: 2px">
+        <hr>
+        <h3>Name: {{placeName}}</h3>
+        <hr>
+        <h3>Rating: {{rating}}</h3>
+        <hr>
+        <h3>Address: {{address}}</h3>
+        <hr>
+        <h3>Phone number: {{phoneNumber}}</h3>
+        <hr>
+        <form action="/places/favorites" method="POST">
+            <button type="submit" class="btn main-btn">Add to favorites</button>
+        </form>
+        <div class="schedule mt-5">
+            <h3>Schedule:</h3>
+            {{#each schedule}}
+            <p><br>{{this}}</p>
+            {{/each}}
+        </div>
+    </div>

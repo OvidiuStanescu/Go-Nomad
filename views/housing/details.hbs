@@ -1,0 +1,21 @@
+<div class="home-display">
+    <div class="container">
+        <h1 class="hero-title">Accomodation details:</h1>
+        <ul>
+            <li>{{name}}</li>
+            <li>{{description}}</li>
+            <li>{{address}}</li>
+            <li>{{country}}</li>
+            <li>{{city}}</li>
+        </ul>
+        <img style="width: 500px; border-radius: 2px;" src="{{picture}}" alt="casita chingona">
+        <p>{{title}}</p>
+        <p>{{review}}</p>
+        <a href="/housing/edit/{{id}}" class="btn search-bar-btn mb-2">Edit</a>
+        <form action="/housing/delete/{{id}}" method="POST">
+            <button style="text-transform:uppercase; letter-spacing: 2px" class="btn btn-danger"
+                type="submit">Delete</button>
+        </form>
+
+    </div>
+</div>

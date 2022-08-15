@@ -1,0 +1,634 @@
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-page {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-page::before {
+  content: '';
+  background: url('/images/geio-tischler-7hww7t6NLcg-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.sign-up-cluster {
+  margin-top: 40px;
+  margin-left: 80%;
+  position: relative;
+  z-index: 1;
+}
+
+.signin-home {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 15px;
+  background-color: white;
+  color: #595c20;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.signin-home:hover {
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: black;
+  color: white;
+}
+
+.signup-home {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.signup-home:hover {
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: #595c20;
+  color: white;
+}
+
+.title-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-btn {
+  margin-bottom: 60px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 8em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.main-btn {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 18px;
+  background-color: white;
+  color: #595c20;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+}
+
+.main-btn:hover {
+  border-radius: 5px;
+  font-size: 1.2em;
+  background-color: black;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(5px) saturate(180%);
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: white
+}
+
+::placeholder {
+  color: white
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-bar-btn {
+  border-radius: none;
+  border-color: white;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.search-bar-btn:hover {
+  font-weight: bold;
+  border-color: white;
+  background-color: #595c20;
+  color: white;
+}
+
+.search-bar button:hover {
+  background-color: wheat;
+}
+
+.search-bar img {
+  width: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  margin-left: 20px;
+  color: black;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.verified-img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.contact-box {
+  height: 200px;
+}
+
+.card-thumbnail {
+
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  object-fit: contain;
+}
+
+.destinations-hero {
+  height: 500px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/harry-kessell-eE2trMn-6a0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.mission-hero {
+  height: 500px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/chuttersnap-QkPb5g9p338-unsplash.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero {
+  height: 800px;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/jezael-melgoza-3snKY0XMKwg-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About us */
+
+.about-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/geio-tischler-7hww7t6NLcg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100vw;
+  text-align: center;
+}
+
+.about-us h1 {
+  margin-top: 30px;
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 6px;
+}
+
+.trailer {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 100px;
+}
+
+video::-webkit-media-controls-panel {
+  background-image: linear-gradient(transparent, transparent) !important;
+  padding: 0 15px;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.logo {
+  margin-bottom: 8px;
+}
+
+.word1 {
+  text-transform: uppercase;
+  color: #595c20;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.word2 {
+  font-weight: bolder;
+  color: black;
+  font-size: 1.4em;
+}
+
+.nav-list a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.main-nav {
+  margin-top: 20px;
+  background-color: white;
+}
+
+.detail-photo {
+  width: 300px;
+}
+
+.home-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin-bottom: 20px;
+  transition: 0.5s ease;
+}
+
+.home-card:hover {
+  transform: scale(1.05);
+}
+
+.home-card:hover .card-body {
+  display: none;
+}
+
+.card-body {
+  font-size: 2.3em;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.pic1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/aayush-gupta-ljhCEaHYWJ8-unsplash.jpg');
+}
+
+
+.pic1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/aayush-gupta-ljhCEaHYWJ8-unsplash.jpg');
+}
+
+
+.pic2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/reiseuhu-SsiI4iw2Gx0-unsplash.jpg');
+}
+
+.pic2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/reiseuhu-SsiI4iw2Gx0-unsplash.jpg');
+}
+
+/* IMG POR CAMBIAR */
+
+.pic3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/barbara-zandoval-fl3fdbbtj4Q-unsplash.jpg');
+}
+
+.pic3:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/barbara-zandoval-fl3fdbbtj4Q-unsplash.jpg');
+}
+
+.pic4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/cassie-gallegos-6wCWCPwmRJY-unsplash.jpg');
+}
+
+.pic4:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/cassie-gallegos-6wCWCPwmRJY-unsplash.jpg');
+}
+
+.pic5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/cheese-yang-6D05B660ydE-unsplash.jpg');
+}
+
+.pic5:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/cheese-yang-6D05B660ydE-unsplash.jpg');
+}
+
+
+.pic6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/colin-watts-C8e3LGjg3fc-unsplash.jpg');
+}
+
+.pic6:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/colin-watts-C8e3LGjg3fc-unsplash.jpg');
+}
+
+
+.pic7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/wj-BpTz_kICS2E-unsplash.jpg');
+}
+
+.pic7:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/wj-BpTz_kICS2E-unsplash.jpg');
+}
+
+.pic8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/pyro-jenka-N2hiyUWvuNs-unsplash.jpg');
+}
+
+.pic8:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/pyro-jenka-N2hiyUWvuNs-unsplash.jpg');
+}
+
+/*  */
+.pic9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/anantachai-saothong-0DKDTSFBXc8-unsplash.jpg');
+}
+
+.pic9:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/anantachai-saothong-0DKDTSFBXc8-unsplash.jpg');
+}
+
+.pic10 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/georgios-domouchtsidis-UtbUQWxElVs-unsplash.jpg');
+}
+
+.pic10:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/georgios-domouchtsidis-UtbUQWxElVs-unsplash.jpg');
+}
+
+.pic11 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/hert-niks-S7QZcYLJJsA-unsplash.jpg');
+}
+
+.pic11:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/hert-niks-S7QZcYLJJsA-unsplash.jpg');
+}
+
+.pic12 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/joel-duncan-Iqa-WlbNjqs-unsplash.jpg');
+}
+
+.pic12:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/joel-duncan-Iqa-WlbNjqs-unsplash.jpg');
+}
+
+.pic13 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/radoslav-bali-jN9JnZ-SyVc-unsplash.jpg');
+}
+
+.pic13:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/radoslav-bali-jN9JnZ-SyVc-unsplash.jpg');
+}
+
+.pic14 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/anna-berdnik-0n0AHB1fgTQ-unsplash.jpg');
+}
+
+.pic14:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/anna-berdnik-0n0AHB1fgTQ-unsplash.jpg');
+}
+
+.pic15 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg');
+}
+
+.pic15:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/alexey-turenkov-bWJiSZjIgTM-unsplash.jpg');
+}
+
+.pic16 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/destinations/roberto-nickson-HmieZw0YOC0-unsplash.jpg');
+}
+
+.pic16:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/destinations/roberto-nickson-HmieZw0YOC0-unsplash.jpg');
+}
+
+#myMap {
+  background-color: blue;
+  height: 50vh;
+}
+
+/* CONTACT */
+.general-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/niklas-weiss--2WlTWZLnRc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.general-form button {
+  border: 1px, solid, white;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* display: block; */
+}
+
+.general-form button:hover {
+  /* border: 1px, solid, white; */
+  background-color: white;
+  color: black;
+}
+
+.create-main-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.augmented-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.answer {
+  text-decoration: underline;
+  text-decoration-color: #595c20;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 5px;
+}
+
+.tick {
+  color: #595c20;
+}
+
+.info-display {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/niklas-weiss--2WlTWZLnRc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+}
+
+.places-display {
+  background-color: black;
+  background-repeat: repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.details-display {
+  background-color: black;
+  background-repeat: repeat;
+  color: white;
+  height: 500vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.schedule-display {
+  background-color: black;
+  background-repeat: repeat;
+  color: white;
+  height: 280vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-margin {
+  margin-top: 20px;
+}
+
+.home-display {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/niklas-weiss--2WlTWZLnRc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.houses-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.house {
+  margin-left: 40px;
+  margin-top: 150px;
+}
+
+.detail-title {
+  margin-top: 150px;
+}
+
+.schedule {
+  height: 50%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}

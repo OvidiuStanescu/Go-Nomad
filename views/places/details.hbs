@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="details-display">
+        <div class="container">
+            <h1 style="padding-top: 60px;" class="hero-title mb-3">{{name}}</h1>
+            <form action="/places/favorites/{{name}}" method="POST"><button type="submit" class="btn main-btn mb-5">Add
+                    to
+                    favorites</button></form>
+
+            <h2 class="mb-5 hero-title" style="font-size: 20px;">Some {{name}} images:</h2>
+
+
+            <div class="row">
+                {{#each photos}}
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div style="background-image: url('{{this}}'); background-postion:center; background-size:cover; height: 200px; border: none;"
+                        class="card home-card">
+                        <div class=" card-body">
+                            <h4 class="card-text">{{name}}</h4>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+
+
+            <div class="mb-4">
+                <a href="/places/details/restaurants/{{name}}/list" class="btn main-btn">Restaurants</a>
+                <a href="/places/details/coworking/{{name}}/list" class="btn main-btn">Coworkings</a>
+                <a href="/places/details/clubs/{{name}}/list" class="btn main-btn">Clubs</a>
+            </div>
+
+            <div class="mb-5 mt-5" style="border-radius: 2px;" id="myMap"></div>
+
+
+
+
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h1 class="hero-title">Your Review</h1>
+                        <hr>
+                        <form action="/reviews/write/{{place_id}}" method="POST">
+                            <div class="mb-3">
+                                <label for="title" class="form-label"><i>Subject</i></label>
+                                <input type="text" class="form-control" id="title" name="title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="review" class="form-label"><i>Review</i></label>
+                                <input type="text" class="form-control" id="review" name="review">
+                            </div>
+
+                            <button type="submit" class="btn search-bar-btn">Submit review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" id="latitude" hidden value="{{coords.lat}}">
+            <input type="text" id="longitude" hidden value="{{coords.lng}}">
+
+            {{#each comments}}
+            <p>{{owner.name}}</p>
+            <hr>
+            <p><b>Subject:</b> {{title}}</p>
+            <p><b>Review:</b> {{review}}</p>
+            <a href="/reviews/update/{{id}}/{{../cityName}}">Update</a>
+            {{/each}}
+        </div>
+    </div>
+
+    <script src="/js/mapStyles.js"></script>
+    <script src="/js/map-setup.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWeFAP8xK0Ea5xMJjFlEDbq7C_twO-_so&callback=renderMap"></script>
+
+    </div>
+</body>
+
+</html>
